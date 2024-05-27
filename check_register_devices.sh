@@ -284,8 +284,7 @@
 
 
  }
-
- CHECK_BEFORE_REGISTER  #aqui comprobar com ping, si responde, no eliminamos
+##MAIN
  echo "....Chequeamos para REGISTRAR...."
  sleep 5
  CHECK_REGISTER
@@ -294,3 +293,4 @@
  echo ".....Chequeamos para ELIMINAR....."
  CHECK_DELETE
  echo "......FIN......"
+ ###
