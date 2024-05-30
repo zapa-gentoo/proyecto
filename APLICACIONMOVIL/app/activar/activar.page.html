@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Activar Dispositivo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+   
+
+    <ion-list>
+      <ion-item>
+        <ion-input [(ngModel)]="mac" labelPlacement="stacked" label="MAC" pattern="^([0-9A-Fa-f]{2}[:\-]){5}([0-9A-Fa-f]{2})$" required #macc="ngModel" placeholder="00:00:00:00:00">
+          <ion-icon slot="start" name="person-circle-outline" aria-hidden="true"></ion-icon>
+        </ion-input>
+       </ion-item>
+
+       <ion-item  lines="none">
+        <span  class="danger" *ngIf="!macc.valid">Introduce una Mac valida</span>
+        <ion-button *ngIf="macc.valid" (click)="ActivarButton()" class="margin-auto">Activar</ion-button>
+      </ion-item>
+
+       
+
+
+      
+          
+    </ion-list>
+
+  </div>
+</ion-content>

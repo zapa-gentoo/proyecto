@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tecnico App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+   
+
+    <ion-list>
+      <ion-item>
+        <ion-input [(ngModel)]="usuario" labelPlacement="stacked" label="Usuario" placeholder="">
+          <ion-icon slot="start" name="person-circle-outline" aria-hidden="true"></ion-icon>
+        </ion-input>
+       </ion-item>
+       <ion-item>
+        <ion-input [(ngModel)]="password" labelPlacement="stacked" label="Password" placeholder="" type="password" >
+          <ion-icon slot="start" name="lock-closed" aria-hidden="false"></ion-icon>
+        </ion-input>
+      </ion-item>
+      <ion-item  lines="none">
+        <ion-button (click)="LoginButton()" class="margin-auto">Login</ion-button>
+      </ion-item>
+          
+    </ion-list>
+
+
+  </div>
+</ion-content>
